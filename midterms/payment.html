@@ -1,0 +1,136 @@
+<!docktype html>
+
+<html>
+<link rel="stylesheet" type="text/css" href="payment.css">
+<p>Contact one of our admins for assistance through messenger:</p>
+
+<ul>
+  <li>
+    Allan Luna 
+    <a href="https://www.facebook.com/allan.luna3">09xxxxxxxxx</a>
+  </li>
+  <li>
+    Reitch Nieto 
+    <a href="https://www.facebook.com/reitch.nieto">09xxxxxxxxx</a>
+  </li>
+  <li>
+    Rempjohn Martin Cruz 
+    <a href="https://www.facebook.com/reitch.nieto">09xxxxxxxxx</a>
+  </li>
+</ul>
+
+<h1>Pament Checkout</h1>
+
+<label for="name" class="text-field">
+  <span class="text-field__label">Name</span>
+  <input id="name" name="name" autocomplete="name" type="text" class="text-field__control">
+</label>
+
+<label for="email" class="text-field">
+  <span class="text-field__label">Email</span>
+  <span class="text-field__hint">We use it to send you your receipt.</span>
+  <span class="text-field__error hidden">Enter a valid email address. Are you missing the “@” symbol?</span>
+  <input id="email" name="email" autocomplete="email" type="email" class="text-field__control">
+</label>
+
+<h2>Delivery address</h2>
+
+<label for="address-line-1" class="text-field">
+  <span class="text-field__label">Street address</span>
+  <input id="address-line-1" name="address-line-1" autocomplete="address-line1" type="text" class="text-field__control">
+</label>
+
+<label for="address-line-2" class="text-field">
+  <span class="text-field__label">Additional information (optional)</span>
+  <span class="text-field__hint">Building or appartment number, for example.</span>
+  <input id="address-line-2" name="address-line-2" autocomplete="address-line2" type="text" class="text-field__control">
+</label>
+
+<label for="address-postal-code" class="text-field text-field--short">
+  <span class="text-field__label">Zip code</span>
+  <input id="address-postal-code" name="address-postal-code" autocomplete="postal-code" type="text" class="text-field__control">
+</label>
+
+<label for="address-city" class="text-field text-field--medium">
+  <span class="text-field__label">City</span>
+  <input id="address-city" name="address-city" autocomplete="city" type="text" class="text-field__control">
+</label>
+
+<h2>Delivery options</h2>
+
+<fieldset>
+  <legend>Delivery options</legend>
+
+  <label for="delivery-options-standard" class="radio-button">
+    <input id="delivery-options-standard" name="delivery-options" type="radio" class="radio-button__control" checked>
+
+    <span class="radio-button__mark" aria-hidden="true"></span>
+
+    <span class="radio-button__label">Standard (free)</span>
+  </label>
+
+  <label for="delivery-options-express" class="radio-button">
+    <input id="delivery-options-express" name="delivery-options" type="radio" class="radio-button__control">
+
+    <span class="radio-button__mark" aria-hidden="true"></span>
+
+    <span class="radio-button__label">Express (expensive)</span>
+  </label>
+</fieldset>
+
+<h2>Delivery notes</h2>
+
+<label for="delivery-notes" class="text-area">
+  <span class="text-area__label">Delivery notes (optional)</span>
+  <span class="text-area__hint">Tell your delivery person where to leave your delivery when you’re not there.</span>
+  <textarea id="delivery-notes" name="delivery-notes" rows="4" class="text-area__control"></textarea>
+</label>
+
+
+
+<h2>Payment</h2>
+
+<label for="payment-card-name" class="text-field">
+  <span class="text-field__label">Name on card</span>
+  <input id="payment-card-name" name="payment-card-name" autocomplete="cc-name" type="text" class="text-field__control">
+</label>
+
+<label for="payment-card-number" class="text-field">
+  <span class="text-field__label">Card number</span>
+  <input id="payment-card-number" name="payment-card-number" autocomplete="cc-number" type="text" class="text-field__control">
+</label>
+
+<label for="payment-expdate" class="text-field text-field--short">
+  <span class="text-field__label">Expiry date</span>
+  <span class="text-field__hint">MMYY</span>
+  <input id="payment-expdate" name="payment-expdate" autocomplete="cc-exp" type="text" class="text-field__control">
+</label>
+
+<label for="payment-cvc" class="text-field text-field--short">
+  <span class="text-field__label">Security number</span>
+  <span class="text-field__hint">The last three digits on the back of the card</span>
+  <input id="payment-cvc" name="payment-cvc" autocomplete="cc-csc" type="text" pattern="[0-9]*" class="text-field__control">
+</label>
+
+<fieldset>
+  <legend>
+    Is your billing address the same as your delivery address?
+  </legend>
+
+  <label for="billing-same-as-shipping-address" class="checkbox">
+    <input id="billing-same-as-shipping-address" name="billing-same-as-shipping-address" type="checkbox" class="checkbox__control" checked>
+
+    <span class="checkbox__tick" aria-hidden="true"></span>
+
+    <span class="checkbox__label">
+      Yes, they’re the same.
+    </span>
+  </label>
+</fieldset>
+
+
+
+<input name="submit" type="submit" value="Submit order" class="button">
+
+</body>
+</html>
